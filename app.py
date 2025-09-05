@@ -9,7 +9,7 @@ from qdrant_client import QdrantClient
 
 # ---------------- Setup ----------------
 # Configure Gemini
-genai.configure(api_key="AIzaSyAksG3SchiWu_26iSAcLPjwAq6JCGaAeGA")  # 🔑 replace with your Gemini key
+genai.configure(api_key="API KEY")  # 🔑 replace with your Gemini key
 gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Embedding model (force CPU safe)
@@ -17,8 +17,8 @@ embedder = SentenceTransformer("all-MiniLM-L6-v2")
 embedder._target_device = "cpu"
 
 # Qdrant Setup
-QDRANT_API_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOiJtIn0.O8LVZ3Yqqe1AuIy1h5ZpD6HR7UQgxoGDL1Ieo7A5QY8"   # 🔑 replace with your Qdrant key
-QDRANT_URL = "https://f8ca4079-9b8d-4d2f-a596-924c8054e845.europe-west3-0.gcp.cloud.qdrant.io"  # 🔑 from Qdrant dashboard
+QDRANT_API_KEY = "API KEY"   # 🔑 replace with your Qdrant key
+QDRANT_URL = "URL"  # 🔑 from Qdrant dashboard
 COLLECTION_NAME = "mite-chatbot"
 
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
