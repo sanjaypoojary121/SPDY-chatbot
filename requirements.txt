@@ -1,0 +1,16 @@
+streamlit
+qdrant-client
+numpy
+openai
+sentence-transformers
+torch
+torchvision
+torchaudio
+PyMuPDF
+pdf2image
+pytesseract
+Pillow
+google-generativeai
+nltk
+beautifulsoup4
+requests
