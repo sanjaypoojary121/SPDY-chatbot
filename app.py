@@ -17,8 +17,8 @@ embedder = SentenceTransformer("all-MiniLM-L6-v2")
 embedder._target_device = "cpu"
 
 # Qdrant Setup
-QDRANT_API_KEY = 'QDRANT_API_KEY'   # 🔑 replace with your Qdrant key
-QDRANT_URL = 'QDRANT_URL'  # 🔑 from Qdrant dashboard
+QDRANT_API_KEY = 'QDRANT__API_KEY'   # 🔑 replace with your Qdrant key
+QDRANT_URL = 'QDRANT__URL'  # 🔑 from Qdrant dashboard
 COLLECTION_NAME = "mite-chatbot"
 
 client = QdrantClient(url=QDRANT_URL, api_key=QDRANT_API_KEY)
