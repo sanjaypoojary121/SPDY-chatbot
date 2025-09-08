@@ -5,8 +5,8 @@ from qdrant_client.http import models as rest
 from tqdm import tqdm   # progress bar
 
 # ---------- CONFIG ----------
-QDRANT_URL = 'QDRANT_URL'
-QDRANT_API_KEY = 'QDRANT_API_KEY'   # 🔑 replace with your real key
+QDRANT_URL = 'QDRANT__URL'
+QDRANT_API_KEY = 'QDRANT__API_KEY'   # 🔑 replace with your real key
 COLLECTION_NAME = "mite-chatbot"
 DIMENSION = 384  # embedding size for all-MiniLM-L6-v2
 BATCH_SIZE = 200  # safe batch size
