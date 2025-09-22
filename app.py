@@ -93,7 +93,7 @@ def generate_response_with_gemini(query, retrieved_chunks):
 
     context = "\n".join(retrieved_chunks)
     prompt = f"""
-You are a helpful assistant trained on SPDY college information.
+You are a helpful assistant trained on MITE college information.
 
 Based on the following context, answer the user's question. 
 If the answer is not present, say "No Data Available" and do not make anything up.
@@ -111,8 +111,8 @@ Question:
         return f"❌ Error generating response: {e}"
 
 # ----------------- Streamlit UI --------------------
-st.set_page_config(page_title="SPDY Chatbot", page_icon="🤖")
-st.title("🤖 SPDY Chatbot (RAG + AMIR + Synonyms + Qdrant)")
+st.set_page_config(page_title="MITE Chatbot", page_icon="🤖")
+st.title("🤖 MITE Chatbot (RAG + AMIR + Synonyms + Qdrant)")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
