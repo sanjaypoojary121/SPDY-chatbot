@@ -14,7 +14,7 @@ gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Embedding model (force CPU safe)
 # Embedding model (force CPU safe, avoids meta tensor bug)
-embedder = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
+embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 embedder._target_device = "cpu"
 
