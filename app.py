@@ -13,7 +13,9 @@ genai.configure(api_key='GEMINI_API_KEY')  # 🔑 replace with your Gemini key
 gemini_model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Embedding model (force CPU safe)
-embedder = SentenceTransformer("all-MiniLM-L6-v2")
+# Embedding model (force CPU safe, avoids meta tensor bug)
+embedder = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
+
 embedder._target_device = "cpu"
 
 # Qdrant Setup
